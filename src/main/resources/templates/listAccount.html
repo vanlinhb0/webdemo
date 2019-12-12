@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List Account</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    <ul>
+        <li th:each="account : ${listAccount}">
+            <span th:text="*{account.getUsername()}"> </span>
+        </li>
+    </ul>
+
+</body>
+</html>
